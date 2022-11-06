@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Fragment_imageView"
+        android:layout_width="413dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_heading_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/avocado_toast" />
+
+    <TextView
+        android:id="@+id/Fragment_heading_textView"
+        android:layout_width="252dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="193dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Avocado Toast"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_description_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_imageView"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/Fragment_description_textView"
+        android:layout_width="361dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="116dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Avocado toast is pretty divisive: You either can’t get enough of it, or you’re totally sick of hearing about it. With a plethora of avocado toast recipes out there—some simple, others more complex—it’s easy to wonder if we’ve reached peak avocado."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_heading_textView" />
+
+    <Button
+        android:id="@+id/frag_button"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Recipe"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:backgroundTint="#3a539b"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_description_textView"
+        app:layout_constraintVertical_bias="0.263" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

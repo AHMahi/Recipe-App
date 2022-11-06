@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Recipe Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/recipe_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/recipe_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Recipe Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/recipe_instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
+
+    <EditText
+        android:id="@+id/recipe_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Recipe Instructions"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/create_recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_description" />
+
+    <Button
+        android:id="@+id/create_recipe"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="166dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Create"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_description"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Create your own Recipe"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recipe_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
