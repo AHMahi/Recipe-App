@@ -1,4 +1,4 @@
-package com.example.myrecepiebook
+package com.example.myrecepiebook.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myrecepiebook.R
+import com.example.myrecepiebook.db.Recipe
 
 class RecipeAdapter(private val recipeList : List<Recipe>, private val listener: (Recipe) -> Unit) :
     RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {

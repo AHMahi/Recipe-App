@@ -6,46 +6,35 @@
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="412dp"
-        android:layout_height="267dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/recyclerView_saved_recipe"
+        android:layout_width="409dp"
+        android:layout_height="593dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/recipe_update"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Update"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/recipe_delete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+    <TextView
+        android:id="@+id/tvNoSavedRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="You have no saved Recipes!! :("
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/recipe_delete"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="120dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Delete"
-        android:textSize="20sp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recipe_update" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

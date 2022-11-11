@@ -7,12 +7,16 @@
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/activity_add_recipe.xml" value="0.2988679352838745" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/activity_favourite_recipe.xml" value="0.2264151024877837" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/activity_main.xml" value="0.2988679352838745" />
-        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/activity_saved_recipe.xml" value="0.2988679352838745" />
+        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/activity_saved_recipe.xml" value="0.1901886860897383" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/each_recipe.xml" value="0.48589341692789967" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/each_saved_recipe.xml" value="0.2264151024877837" />
+        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/fragment_add.xml" value="0.3145833333333333" />
+        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/fragment_list.xml" value="0.3145833333333333" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/fragment_recipe.xml" value="0.2264151024877837" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/nav_header.xml" value="0.16802536231884058" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/layout/row.xml" value="0.192481884057971" />
+        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/saved_recipe_item.xml" value="0.1" />
+        <entry key="..\:/MyRecepieBook/app/src/main/res/layout/update_recipe.xml" value="0.3145833333333333" />
         <entry key="..\:/MyRecepieBook/app/src/main/res/menu/nav_menu.xml" value="0.19753086419753085" />
       </map>
     </option>
