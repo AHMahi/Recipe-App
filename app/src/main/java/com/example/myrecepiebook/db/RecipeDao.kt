@@ -15,7 +15,7 @@ interface RecipeDao {
     @Query("SELECT * FROM  $RECIPE_TABLE WHERE recipeId LIKE :id")
     fun getRecipe(id : Int): Recipe
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)//if there is a new user we will just ignore that
+    @Insert //if there is a new user we will just ignore that
     fun addRecipe(recipe: Recipe)
 
     @Update

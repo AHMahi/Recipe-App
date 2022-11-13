@@ -15,7 +15,7 @@ import java.util.*
 @Parcelize
 data class Recipe(
     @PrimaryKey(autoGenerate = true)
-    val recipeId: Int,
+    val recipeId: Int = 0,
     @DrawableRes val recipeImage: Int = R.drawable.avocado_toast,
     @ColumnInfo(name = "recipe_name")
     val recipeName: String,
