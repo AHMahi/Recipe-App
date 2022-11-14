@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/update_activity_heading" />
 
     <EditText
         android:id="@+id/edit_recipe_description"
@@ -98,7 +98,7 @@
         app:layout_constraintVertical_bias="0.093" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/update_activity_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -106,7 +106,7 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Create your own Recipe"
+        android:text="Update Selected Recipe"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/edit_recipe_name"

@@ -2,6 +2,7 @@ package com.example.myrecepiebook.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.ViewGroup
@@ -9,8 +10,10 @@ import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myrecepiebook.Constants.BUNDLE_RECIPE_ID
 import com.example.myrecepiebook.databinding.SavedRecipeItemBinding
 import com.example.myrecepiebook.db.Recipe
+import com.example.myrecepiebook.ui.UpdateRecipeActivity
 
 
 class SavedRecipeAdapter : RecyclerView.Adapter<SavedRecipeAdapter.ViewHolder>(){
@@ -44,6 +47,12 @@ class SavedRecipeAdapter : RecyclerView.Adapter<SavedRecipeAdapter.ViewHolder>()
                 savedRecipeName.text = item.recipeName
                 savedRecipeDescription.text = item.recipeDesc
                 savedRecipeInstruction.text = item.recipeInstructions
+
+                root.setOnClickListener{
+                    val intent = Intent(context, UpdateRecipeActivity::class.java)
+                    intent.putExtra(BUNDLE_RECIPE_ID, item.recipeId)
+                    context.startActivity(intent)
+                }
             }
         }
     }

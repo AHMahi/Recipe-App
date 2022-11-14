@@ -37,7 +37,7 @@ class AddRecipeActivity : AppCompatActivity() {
 
                 if(recipeName.isNotEmpty() || recipeDesc.isNotEmpty() || recipeInstructions.isNotEmpty()){
 
-                    recipe = Recipe(10, recipeImage, recipeName, recipeDesc, recipeInstructions)
+                    recipe = Recipe(0, recipeImage, recipeName, recipeDesc, recipeInstructions)
                     recipeDB.doa().addRecipe(recipe)
                     finish()//go back to prev page automatically after task finish
                 }
